@@ -22,10 +22,8 @@ class LeapYearTest {
 
     @Test
     void output_is_dividable_by_100() {
-        boolean expected = false;
-        boolean actual = new LeapYear().output(1700);
-
-        assertEquals(expected, actual);
+        assertFalse(new LeapYear().output(1700));
+        assertFalse(new LeapYear().output(1900));
     }
 
 
